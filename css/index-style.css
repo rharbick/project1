@@ -183,10 +183,51 @@ nav {
 .card {
     display: flex;
     flex-direction: column;
-    margin: 10px;
-    padding: 5px;
+
+    width: 90%;
+    height: 50%;
+
+    background-color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 15px;
+    filter: drop-shadow(5px 4px 1px #8a8a8a);
+}
+
+.card > h1 {
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.card-description {
+    margin: 5px;
+}
+
+.card-photo > img {
+    width: 70%;
+    height: auto;
+}
+
+.buynow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
     width: 100%;
     height: 100%;
+}
 
-    background-color: red;
+.buynow > a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 64px;
+
 }
