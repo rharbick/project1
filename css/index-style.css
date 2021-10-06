@@ -99,7 +99,7 @@ nav {
     height: 40vh;
     margin: 0;
 
-    background: url(titlephoto.png);
+    background: url(../images/titlephoto.png);
     background-size: cover;
 }
 
