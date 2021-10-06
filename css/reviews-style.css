@@ -15,9 +15,7 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    overflow: auto;
-
-    height: 100%;
+    height: 60vh;
 
     z-index: 1;
 }
@@ -25,6 +23,10 @@ main {
 nav {
     background-color: black;
     filter: drop-shadow(0px 4px 7px rgb(63, 63, 63));
+    position: fixed;
+    width: 100%;
+
+    z-index: 9999;
 }
 
 .navlinks {
@@ -115,6 +117,37 @@ nav {
     background-size: cover;
 }
 
+.ship {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+
+    position: relative;
+    z-index: 0;
+
+    animation-name: ship;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ship {
+    from {
+        right: 1000px;
+      }
+    
+      to {
+        right: 0px;
+      }
+}
+
+.ship > img {
+    width: 40%;
+    height: auto;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -142,14 +175,14 @@ nav {
 
 .main-content {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     overflow: auto;
     justify-content: flex-start;
     align-items: center;
     margin: 5px;
     width: 60%;
-    height: auto;
+    height: 100%;
 }
 
 .card {
